@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-PG_DSN = f"host={os.getenv('SUPA_HOST')} dbname={os.getenv('SUPA_DB')} user={os.getenv('SUPA_USER')} password={os.getenv('SUPA_PASS')} sslmode=require"
+PG_DSN = f"host={os.getenv('SUPA_HOST')} port={os.getenv('SUPA_PORT')} dbname={os.getenv('SUPA_DB')} user={os.getenv('SUPA_USER')} password={os.getenv('SUPA_PASS')}"
 OPENAI_URL = "https://hubai.loe.gg/v1/embeddings"
 HEADERS = {
     "Content-Type": "application/json",
